@@ -29,7 +29,7 @@ define('DB_USER', 'a1381318_idea');
 define('DB_PASSWORD', 'Titan116');
 
 /** Имя сервера MySQL */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql6.000webhost.com');
 
 /** Кодировка базы данных для создания таблиц. */
 define('DB_CHARSET', 'utf8');
@@ -76,7 +76,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* Это всё, дальше не редактируем. Успехов! */
 
