@@ -53,10 +53,10 @@
 		<div class="container">
 			<ul id="main-menu">
 				<li><a href="#" class="active">Главная</a></li>
-				<li><a href="#">О компании</a></li>
+				<li><a href="/about_idea/">О компании</a></li>
 				<li><a href="#">Услуги</a></li>
 				<li><a href="#">Новости</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="/contacts/">Контакты</a></li>
 			</ul>
 			<ul id="social">
 				<li><a class="fb" href="#" title="Facebook"></a></li>

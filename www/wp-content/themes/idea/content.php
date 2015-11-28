@@ -9,24 +9,16 @@
  * @since Twenty Fifteen 1.0
  */
 ?>
+<?php get_template_part( 'social');?>
+<?php the_title( '<h1><span>','</span></h1>' ); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		// Post thumbnail.
 		twentyfifteen_post_thumbnail();
 	?>
 
-	<header class="entry-header">
-		<?php
-			if ( is_single() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			else :
-				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-			endif;
-		?>
-	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div id="news">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
@@ -57,4 +49,4 @@
 		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 
-</article><!-- #post-## -->
+
