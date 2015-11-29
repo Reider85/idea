@@ -264,7 +264,7 @@ textarea {
 	box-shadow: 2px 2px 0 #f2f2f2 inset;
 }
 
-.btn {
+.btn,.more-link{
 	font-family: MyriadProRegular;
 	font-size: 14px;
 	-webkit-border-radius: 4px;
@@ -275,7 +275,11 @@ textarea {
 	vertical-align: top;
 	outline: none !important;
 }
-
+.more-link{
+	display:block;
+	margin-top:15px;
+	width:115px;
+}
 a.btn {
 	text-decoration: none;
 	display: inline-block;
@@ -323,17 +327,21 @@ a.btn {
 	background: #2a97cd;
 }
 
-.btn-orange {
+.btn-orange,.more-link{
 	color: #fff !important;
 	background: #df9528;
 	border: 1px solid #df9528;
 }
 
 .btn-orange:hover,
-.btn-orange:focus {
+.btn-orange:focus,
+.more-link:hover,
+.more-link:focus{
 	background: #d48208;
 }
-
+.more-link:hover{
+	text-decoration:none;
+}
 .btn-lg {
 	padding: 15px 30px;
 	font-size: 16px;
@@ -2169,7 +2177,12 @@ footer > .container p {
 	font-size: 14px;
 	text-align: right;
 }
-
+ul#news li h2:last-of-type{
+	display:none;
+}
+ul#news li p img{
+	margin-top:-36px;
+}
 
 
 
