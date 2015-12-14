@@ -1069,29 +1069,29 @@ header > .container {
 	text-decoration: none;
 }
 
-#sub-menu > li.active > a.outdoor-icon,
-#sub-menu > li > a.outdoor-icon:hover,
-#sub-menu > li > a.outdoor-icon:focus {
+#sub-menu > li.active >  .menu-item-153 > a,
+#sub-menu > li >  .menu-item-153 > a:hover,
+#sub-menu > li >  .menu-item-153 > a:focus {
 	color: #f7a80d;
 }
-#sub-menu > li.active > a.print-icon,
-#sub-menu > li > a.print-icon:hover,
-#sub-menu > li > a.print-icon:focus {
+#sub-menu > li.active > .menu-item-160 > a,
+#sub-menu > li > .menu-item-160 > a:hover,
+#sub-menu > li > .menu-item-160 > a:focus {
 	color: #0088cf;
 }
-#sub-menu > li.active > a.uv-icon,
-#sub-menu > li > a.uv-icon:hover,
-#sub-menu > li > a.uv-icon:focus {
+#sub-menu > li.active > .menu-item-161 > a,
+#sub-menu > li > .menu-item-161 > a:hover,
+#sub-menu > li > .menu-item-161 > a:focus {
 	color: #67912b;
 }
-#sub-menu > li.active > a.media-icon,
-#sub-menu > li > a.media-icon:hover,
-#sub-menu > li > a.media-icon:focus {
+#sub-menu > li.active >  .menu-item-162 > a,
+#sub-menu > li >  .menu-item-162 > a:hover,
+#sub-menu > li >  .menu-item-162 > a:focus {
 	color: #8fcb39;
 }
-#sub-menu > li.active > a.adv-icon,
-#sub-menu > li > a.adv-icon:hover,
-#sub-menu > li > a.adv-icon:focus {
+#sub-menu > li.active >  .menu-item-163 > a,
+#sub-menu > li >  .menu-item-163 > a:hover,
+#sub-menu > li >  .menu-item-163 > a:focus {
 	color: #a54d2f;
 }
 #sub-menu > li.active > a.flag-icon,
@@ -1104,9 +1104,9 @@ header > .container {
 #sub-menu > li > a.polygr-icon:focus {
 	color: #67912b;
 }
-#sub-menu > li.active > a.cloth-icon,
-#sub-menu > li > a.cloth-icon:hover,
-#sub-menu > li > a.cloth-icon:focus {
+#sub-menu > li.active > .menu-item-166 > a,
+#sub-menu > li > .menu-item-166 > a:hover,
+#sub-menu > li > .menu-item-166 > a:focus {
 	color: #3aaaab;
 }
 
@@ -1123,29 +1123,29 @@ header > .container {
 	position: absolute;
 }
 
-#sub-menu > li.active > a.outdoor-icon:before,
-#sub-menu > li > a.outdoor-icon:hover:before,
-#sub-menu > li > a.outdoor-icon:focus:before {
+#sub-menu > li.active >  .menu-item-153 > a:before,
+#sub-menu > li >  .menu-item-153 > a:hover:before,
+#sub-menu > li >  .menu-item-153 > a:focus:before {
 	background: #f7a80d;
 }
-#sub-menu > li.active > a.print-icon:before,
-#sub-menu > li > a.print-icon:hover:before,
-#sub-menu > li > a.print-icon:focus:before {
+#sub-menu > li.active > .menu-item-160 > a:before,
+#sub-menu > li > .menu-item-160 > a:hover:before,
+#sub-menu > li > .menu-item-160 > a:focus:before {
 	background: #0088cf;
 }
-#sub-menu > li.active > a.uv-icon:before,
-#sub-menu > li > a.uv-icon:hover:before,
-#sub-menu > li > a.uv-icon:focus:before {
+#sub-menu > li.active > .menu-item-161 > a:before,
+#sub-menu > li > .menu-item-161 > a:hover:before,
+#sub-menu > li > .menu-item-161 > a:focus:before {
 	background: #67912b;
 }
-#sub-menu > li.active > a.media-icon:before,
-#sub-menu > li > a.media-icon:hover:before,
-#sub-menu > li > a.media-icon:focus:before {
+#sub-menu > li.active >  .menu-item-162 > a:before,
+#sub-menu > li >  .menu-item-162 > a:hover:before,
+#sub-menu > li >  .menu-item-162 > a:focus:before {
 	background: #8fcb39;
 }
-#sub-menu > li.active > a.adv-icon:before,
-#sub-menu > li > a.adv-icon:hover:before,
-#sub-menu > li > a.adv-icon:focus:before {
+#sub-menu > li.active >  .menu-item-163 > a:before,
+#sub-menu > li >  .menu-item-163 > a:hover:before,
+#sub-menu > li >  .menu-item-163 > a:focus:before {
 	background: #a54d2f;
 }
 #sub-menu > li.active > a.flag-icon:before,
@@ -1158,9 +1158,9 @@ header > .container {
 #sub-menu > li > a.polygr-icon:focus:before {
 	background: #67912b;
 }
-#sub-menu > li.active > a.cloth-icon:before,
-#sub-menu > li > a.cloth-icon:hover:before,
-#sub-menu > li > a.cloth-icon:focus:before {
+#sub-menu > li.active > .menu-item-166 > a:before,
+#sub-menu > li > .menu-item-166 > a:hover:before,
+#sub-menu > li > .menu-item-166 > a:focus:before {
 	background: #3aaaab;
 }
 
@@ -1182,68 +1182,68 @@ header > .container {
 	color: #adaeae;
 }
 
-#sub-menu .outdoor-icon {
+#sub-menu .menu-item-153 > a {
 	background-position: -590px 12px;
 }
-#sub-menu .active .outdoor-icon,
-#sub-menu .outdoor-icon:hover,
-#sub-menu .outdoor-icon:focus {
+#sub-menu .active .menu-item-153 > a,
+#sub-menu .menu-item-153 > a:hover,
+#sub-menu .menu-item-153 > a:focus {
 	background-position: -261px -318px;
 }
-#sub-menu .print-icon {
+#sub-menu .menu-item-160 > a {
 	background-position: -548px -28px;
 }
-#sub-menu .active .print-icon,
-#sub-menu .print-icon:hover,
-#sub-menu .print-icon:focus {
+#sub-menu .active .menu-item-160 > a,
+#sub-menu .menu-item-160 > a:hover,
+#sub-menu .menu-item-160 > a:focus {
 	background-position: -218px -358px;
 }
-#sub-menu .uv-icon {
+#sub-menu .menu-item-161 > a {
 	background-position: -505px -71px;
 }
-#sub-menu .active .uv-icon,
-#sub-menu .uv-icon:hover,
-#sub-menu .uv-icon:focus {
+#sub-menu .active .menu-item-161 > a,
+#sub-menu .menu-item-161 > a:hover,
+#sub-menu .menu-item-161 > a:focus {
 	background-position: -176px -401px;
 }
-#sub-menu .media-icon {
+#sub-menu .menu-item-162 > a {
 	background-position: -468px -110px;
 }
-#sub-menu .active .media-icon,
-#sub-menu .media-icon:hover,
-#sub-menu .media-icon:focus {
+#sub-menu .active .menu-item-162 > a,
+#sub-menu .menu-item-162 > a:hover,
+#sub-menu .menu-item-162 > a:focus {
 	background-position: -138px -440px;
 }
-#sub-menu .adv-icon {
+#sub-menu .menu-item-163 > a {
 	background-position: -427px -151px;
 }
-#sub-menu .active .adv-icon,
-#sub-menu .adv-icon:hover,
-#sub-menu .adv-icon:focus {
+#sub-menu .active .menu-item-163 > a,
+#sub-menu .menu-item-163 > a:hover,
+#sub-menu .menu-item-163 > a:focus {
 	background-position: -97px -481px;
 }
-#sub-menu .flag-icon {
+#sub-menu .menu-item-164 > a {
 	background-position: -385px -192px;
 }
-#sub-menu .active .flag-icon,
-#sub-menu .flag-icon:hover,
-#sub-menu .flag-icon:focus {
+#sub-menu .active .menu-item-164 > a,
+#sub-menu .menu-item-164 > a:hover,
+#sub-menu .menu-item-164 > a:focus {
 	background-position: -56px -522px;
 }
-#sub-menu .polygr-icon {
+#sub-menu .menu-item-165 > a {
 	background-position: -346px -230px;
 }
-#sub-menu .active .polygr-icon,
-#sub-menu .polygr-icon:hover,
-#sub-menu .polygr-icon:focus {
+#sub-menu .active .menu-item-165 > a,
+#sub-menu .menu-item-165 > a:hover,
+#sub-menu .menu-item-165 > a:focus {
 	background-position: -17px -560px;
 }
-#sub-menu .cloth-icon {
+#sub-menu .menu-item-166 > a {
 	background-position: -307px -269px;
 }
-#sub-menu .active .cloth-icon,
-#sub-menu .cloth-icon:hover,
-#sub-menu .cloth-icon:focus {
+#sub-menu .active .menu-item-166 > a,
+#sub-menu .menu-item-166 > a:hover,
+#sub-menu .menu-item-166 > a:focus {
 	background-position: 22px -599px;
 }
 
@@ -1254,28 +1254,28 @@ header > .container {
 	/*background: #37a9e2;*/
 }
 
-#sub-menu .outdoor-icon + ul {
+#sub-menu .menu-item-153 > a + ul {
 	background: #f7a80d;
 }
-#sub-menu .print-icon + ul {
+#sub-menu .menu-item-160 > a + ul {
 	background: #0088cf;
 }
-#sub-menu .uv-icon + ul {
+#sub-menu .menu-item-161 > a + ul {
 	background: #67912b;
 }
-#sub-menu .media-icon + ul {
+#sub-menu .menu-item-162 > a + ul {
 	background: #8fcb39;
 }
-#sub-menu .adv-icon + ul {
+#sub-menu .menu-item-163 > a + ul {
 	background: #a54d2f;
 }
-#sub-menu .flag-icon + ul {
+#sub-menu .menu-item-164 > a + ul {
 	background: #ce492a;
 }
-#sub-menu .polygr-icon + ul {
+#sub-menu .menu-item-165 > a + ul {
 	background: #67912b;
 }
-#sub-menu .cloth-icon + ul {
+#sub-menu .menu-item-166 > a + ul {
 	background: #3aaaab;
 }
 
@@ -1305,44 +1305,44 @@ header > .container {
 	width: 80%;
 }
 
-#sub-menu .outdoor-icon + ul li a:hover,
-#sub-menu .outdoor-icon + ul li a:focus,
-#sub-menu .outdoor-icon + ul li:not(:first-child) a:before {
+#sub-menu .menu-item-153 > a + ul li a:hover,
+#sub-menu .menu-item-153 > a + ul li a:focus,
+#sub-menu .menu-item-153 > a + ul li:not(:first-child) a:before {
 	background: #e49b0c;
 }
-#sub-menu .print-icon + ul li a:hover,
-#sub-menu .print-icon + ul li a:focus,
-#sub-menu .print-icon + ul li:not(:first-child) a:before {
+#sub-menu .menu-item-160 > a + ul li a:hover,
+#sub-menu .menu-item-160 > a + ul li a:focus,
+#sub-menu .menu-item-160 > a + ul li:not(:first-child) a:before {
 	background: #007dbf;
 }
-#sub-menu .uv-icon + ul li a:hover,
-#sub-menu .uv-icon + ul li a:focus,
-#sub-menu .uv-icon + ul li:not(:first-child) a:before {
+#sub-menu .menu-item-161 > a + ul li a:hover,
+#sub-menu .menu-item-161 > a + ul li a:focus,
+#sub-menu .menu-item-161 > a + ul li:not(:first-child) a:before {
 	background: #5f8628;
 }
-#sub-menu .media-icon + ul li a:hover,
-#sub-menu .media-icon + ul li a:focus,
-#sub-menu .media-icon + ul li:not(:first-child) a:before {
+#sub-menu .menu-item-162 > a + ul li a:hover,
+#sub-menu .menu-item-162 > a + ul li a:focus,
+#sub-menu .menu-item-162 > a + ul li:not(:first-child) a:before {
 	background: #84bb35;
 }
-#sub-menu .adv-icon + ul li a:hover,
-#sub-menu .adv-icon + ul li a:focus,
-#sub-menu .adv-icon + ul li:not(:first-child) a:before {
+#sub-menu .menu-item-163 > a + ul li a:hover,
+#sub-menu .menu-item-163 > a + ul li a:focus,
+#sub-menu .menu-item-163 > a + ul li:not(:first-child) a:before {
 	background: #98472b;
 }
-#sub-menu .flag-icon + ul li a:hover,
-#sub-menu .flag-icon + ul li a:focus,
-#sub-menu .flag-icon + ul li:not(:first-child) a:before {
+#sub-menu .menu-item-164 > a + ul li a:hover,
+#sub-menu .menu-item-164 > a + ul li a:focus,
+#sub-menu .menu-item-164 > a + ul li:not(:first-child) a:before {
 	background: #be4327;
 }
-#sub-menu .polygr-icon + ul li a:hover,
-#sub-menu .polygr-icon + ul li a:focus,
-#sub-menu .polygr-icon + ul li:not(:first-child) a:before {
+#sub-menu .menu-item-165 > a + ul li a:hover,
+#sub-menu .menu-item-165 > a + ul li a:focus,
+#sub-menu .menu-item-165 > a + ul li:not(:first-child) a:before {
 	background: #5f8628;
 }
-#sub-menu .cloth-icon + ul li a:hover,
-#sub-menu .cloth-icon + ul li a:focus,
-#sub-menu .cloth-icon + ul li:not(:first-child) a:before {
+#sub-menu .menu-item-166 > a + ul li a:hover,
+#sub-menu .menu-item-166 > a + ul li a:focus,
+#sub-menu .menu-item-166 > a + ul li:not(:first-child) a:before {
 	background: #359d9e;
 }
 
@@ -1360,7 +1360,9 @@ header > .container {
 	right: 9px;
 	top: -1px;
 }
-
+#sub-menu .dropdown-toggle{
+	display:none;
+}
 /* last news */
 
 #left-column h2 {

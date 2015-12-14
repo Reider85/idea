@@ -20,7 +20,7 @@ $().ready(function () {
 	// sub menu
 	$('#sub-menu > li').has('ul').addClass('parent');
 	$('#sub-menu > li').click(
-		function () {
+		function (event) {
 			$('#sub-menu ul').stop().slideUp(500);
 			$(this).find('ul').stop().slideToggle(500);
 			$('#sub-menu .parent').not(this).removeClass('active');
@@ -39,22 +39,31 @@ $().ready(function () {
 	});
 	
 	// gallery - http://pgwjs.com/pgwslideshow/
-	$('.right .pgwSlideshow').pgwSlideshow({
-		transitionEffect: 'fading',
-		displayControls: false
-	});
-	$('.slider .pgwSlideshow').pgwSlideshow({
-		displayList: false
-	});
-	
+	if ($('.right .pgwSlideshow').length>0) {
+		$('.right .pgwSlideshow').pgwSlideshow({
+			transitionEffect: 'fading',
+			displayControls: false
+		});
+	}
+	if ($('.slider .pgwSlideshow').length>0) {
+		$('.slider .pgwSlideshow').pgwSlideshow({
+			displayList: false
+		});
+	}
 	// placement
-	$('.selectpicker').selectpicker({
-        style: 'btn-info',
-        size: 4
-    });
-	$("#placement").change(function(){
-		$("#" + this.value).show().siblings().hide();
-	});
-	$("#placement").change();
-  
+	if ($('.selectpicker').length>0) {
+		$('.selectpicker').selectpicker({
+			style: 'btn-info',
+			size: 4
+		});
+	}
+
+	if ($("#placement").length>0) {
+
+		$("#placement").change(function () {
+			$("#" + this.value).show().siblings().hide();
+		});
+
+		$("#placement").change();
+	}
 });

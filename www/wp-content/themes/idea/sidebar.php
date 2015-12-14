@@ -9,80 +9,91 @@
 
 if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
 	<div id="left-column">
-
+		<?php if ( has_nav_menu( 'sidebar' ) ) : ?>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php
+				// Primary navigation menu.
+				wp_nav_menu( array(
+						'menu_id'=>'sub-menu',
+						'theme_location' => 'sidebar'
+				));
+				?>
+			</nav><!-- .main-navigation -->
+		<?php endif; ?>
 		<!-- sub menu -->
-		<ul id="sub-menu">
-			<li>
-				<a class="outdoor-icon" href="#">Наружная реклама</a>
-				<ul>
-					<li><a href="#">Вывески</a></li>
-					<li><a href="#">Информационные стенды</a></li>
-					<li><a href="#">Объемные буквы</a></li>
-					<li><a href="#">Оформление мест продаж</a></li>
-					<li><a href="#">Световые короба</a></li>
-					<li><a href="#">Таблички указатели</a></li>
-					<li><a href="#">Штендеры</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="print-icon" href="#">Широкоформатная печать</a>
-				<ul>
-					<li><a href="#">Вывески</a></li>
-					<li><a href="#">Информационные стенды</a></li>
-					<li><a href="#">Объемные буквы</a></li>
-					<li><a href="#">Оформление мест продаж</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="uv-icon" href="#">UV-печать</a>
-				<ul>
-					<li><a href="#">Световые короба</a></li>
-					<li><a href="#">Таблички указатели</a></li>
-					<li><a href="#">Штендеры</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="media-icon" href="#">Медиа-фасады, экраны</a>
-				<ul>
-					<li><a href="#">Световые короба</a></li>
-					<li><a href="#">Таблички указатели</a></li>
-					<li><a href="#">Штендеры</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="adv-icon" href="#">Размещение рекламы</a>
-				<ul>
-					<li><a href="#">Световые короба</a></li>
-					<li><a href="#">Таблички указатели</a></li>
-					<li><a href="#">Штендеры</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="flag-icon" href="#">Флаги, флагштоки</a>
-				<ul>
-					<li><a href="#">Световые короба</a></li>
-					<li><a href="#">Таблички указатели</a></li>
-					<li><a href="#">Штендеры</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="polygr-icon" href="#">Полиграфия</a>
-				<ul>
-					<li><a href="#">Световые короба</a></li>
-					<li><a href="#">Таблички указатели</a></li>
-					<li><a href="#">Штендеры</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="cloth-icon" href="#">Корпоративная одежда</a>
-				<ul>
-					<li><a href="#">Световые короба</a></li>
-					<li><a href="#">Таблички указатели</a></li>
-					<li><a href="#">Штендеры</a></li>
-				</ul>
-			</li>
-		</ul>
-
+		<div class="menu">
+			<ul id="sub-menu">
+				<li>
+					<a class="outdoor-icon" href="#">Наружная реклама</a>
+					<ul>
+						<li><a href="#">Вывески</a></li>
+						<li><a href="#">Информационные стенды</a></li>
+						<li><a href="#">Объемные буквы</a></li>
+						<li><a href="#">Оформление мест продаж</a></li>
+						<li><a href="#">Световые короба</a></li>
+						<li><a href="#">Таблички указатели</a></li>
+						<li><a href="#">Штендеры</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="print-icon" href="#">Широкоформатная печать</a>
+					<ul>
+						<li><a href="#">Вывески</a></li>
+						<li><a href="#">Информационные стенды</a></li>
+						<li><a href="#">Объемные буквы</a></li>
+						<li><a href="#">Оформление мест продаж</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="uv-icon" href="#">UV-печать</a>
+					<ul>
+						<li><a href="#">Световые короба</a></li>
+						<li><a href="#">Таблички указатели</a></li>
+						<li><a href="#">Штендеры</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="media-icon" href="#">Медиа-фасады, экраны</a>
+					<ul>
+						<li><a href="#">Световые короба</a></li>
+						<li><a href="#">Таблички указатели</a></li>
+						<li><a href="#">Штендеры</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="adv-icon" href="#">Размещение рекламы</a>
+					<ul>
+						<li><a href="#">Световые короба</a></li>
+						<li><a href="#">Таблички указатели</a></li>
+						<li><a href="#">Штендеры</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="flag-icon" href="#">Флаги, флагштоки</a>
+					<ul>
+						<li><a href="#">Световые короба</a></li>
+						<li><a href="#">Таблички указатели</a></li>
+						<li><a href="#">Штендеры</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="polygr-icon" href="#">Полиграфия</a>
+					<ul>
+						<li><a href="#">Световые короба</a></li>
+						<li><a href="#">Таблички указатели</a></li>
+						<li><a href="#">Штендеры</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="cloth-icon" href="#">Корпоративная одежда</a>
+					<ul>
+						<li><a href="#">Световые короба</a></li>
+						<li><a href="#">Таблички указатели</a></li>
+						<li><a href="#">Штендеры</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 		<!-- last news -->
 		<h2>Новости и акции</h2>
 		<div id="last-news">
