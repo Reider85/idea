@@ -35,12 +35,13 @@
 		<div id="info">
 			<div id="time" class="">
 				<h2>Время работы:</h2>
-				<strong>9:00</strong> до <strong>17:00</strong>
+				<strong>9:00</strong> до <strong>17:30</strong>
 				<span>сб. вс. выходной</span>
 			</div>
 			<div id="mail" class="">
 				<h2>E-mail:</h2>
-				<strong>idea163@yandex.ru</strong>
+				<strong>idea163@yandex.ru</strong><br>
+                <strong>idea163reklama@yandex.ru</strong>
 			</div>
 			<div id="phone" class="">
 				<h2>Телефон:</h2>
@@ -52,15 +53,15 @@
 	<div id="nav">
 		<div class="container">
 			<ul id="main-menu">
-				<li><a href="#" class="active">Главная</a></li>
+				<li><a href="/index.php" class="active">Главная</a></li>
 				<li><a href="/about_idea/">О компании</a></li>
 				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Новости</a></li>
+				<li><a href="/category/news/">Новости</a></li>
 				<li><a href="/contacts/">Контакты</a></li>
 			</ul>
 			<ul id="social">
-				<li><a class="fb" href="#" title="Facebook"></a></li>
-				<li><a class="tw" href="#" title="Twitter"></a></li>
+				<!--<li><a class="fb" href="#" title="Facebook"></a></li>
+				<li><a class="tw" href="#" title="Twitter"></a></li>-->
 				<li><a class="vk" href="#" title="ВКонтакте"></a></li>
 				<li id="search">
 					<button src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/search_icon.png" title="Поиск"></button>

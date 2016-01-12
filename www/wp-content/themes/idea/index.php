@@ -29,7 +29,7 @@ get_header(); ?>
 	<div class="carousel-inner">
 		<div class="item active">
 			<!-- Set the first background image using inline CSS below. -->
-			<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+			<div class="fill" style="background-image:url('/wp-content/themes/idea/img/sliders/main_slider3.jpg');"></div>
 			<div class="carousel-caption">
 				<h2>Caption 1</h2>
 			</div>
@@ -84,32 +84,32 @@ get_header(); ?>
 		<div class="lg special">
 			<span>Наружная реклама</span>
 			<strong>от 1000 руб</strong>
-			<a href="#" class="btn btn-default">Подробнее</a>
+			<a href="/naruzhnaja_reklama/" class="btn btn-default">Подробнее</a>
 		</div>
 		<div class="border-0088cf">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_print.jpg" alt="" />
 			<span>Широкоформатная печать</span>
-			<a href="#" class="btn btn-default">Подробнее</a>
+			<a href="shirokoformatnaja_pechat/" class="btn btn-default">Подробнее</a>
 		</div>
-		<div class="border-8fcb39">
+		<!--<div class="border-8fcb39">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_media.jpg" alt="" />
 			<span>Медиа-фасады</span>
 			<a href="#" class="btn btn-default">Подробнее</a>
-		</div>
+		</div>-->
 		<div class="border-a54d2f">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_adv.jpg" alt="" />
 			<span>Размещение рекламы</span>
-			<a href="#" class="btn btn-default">Подробнее</a>
+			<a href="/razmeshhenie_reklamy/" class="btn btn-default">Подробнее</a>
 		</div>
 		<div class="border-ce492a">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_flag.jpg" alt="" />
 			<span>Флаги, флагштоки</span>
-			<a href="#" class="btn btn-default">Подробнее</a>
+			<a href="/flagi_flagshtoki/" class="btn btn-default">Подробнее</a>
 		</div>
 		<div class="border-67912b">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_polygr.jpg" alt="" />
 			<span>Полиграфия</span>
-			<a href="#" class="btn btn-default">Подробнее</a>
+			<a href="/poligrafija/" class="btn btn-default">Подробнее</a>
 		</div>
 		<div class="border-3aaaab">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_cloth.jpg" alt="" />
@@ -119,8 +119,13 @@ get_header(); ?>
 		<div class="lg border-d69320">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_light.jpg" alt="" />
 			<span>Световые короба</span>
-			<a href="#" class="btn btn-default">Подробнее</a>
+			<a href="/lightbox/" class="btn btn-default">Подробнее</a>
 		</div>
+        <div class="border-996241">
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_design.jpg" alt="" />
+            <span>Дизайн</span>
+            <a href="#" class="btn btn-default">Подробнее</a>
+        </div>
 		<div class="lg border-f7a80d">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_letters.jpg" alt="" />
 			<span>Объемные буквы</span>
@@ -136,43 +141,39 @@ get_header(); ?>
 			<span>UV-печать</span>
 			<a href="#" class="btn btn-default">Подробнее</a>
 		</div>
-		<div class="border-996241">
-			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_design.jpg" alt="" />
-			<span>Дизайн</span>
-			<a href="#" class="btn btn-default">Подробнее</a>
-		</div>
+
 	</div>
 </div>
 
 <!-- about -->
 <div id="about">
 	<div class="container">
-		<h1>Рекламное агентство “ИДЕЯ”</h1>
-		<p>Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий</p>
+		<h1>Рекламная компания “ИДЕЯ”</h1>
+		<p>является динамично развивающимся производителем рекламной продукции полного цикла. РК "Идея" это:</p>
 		<ul>
 			<li>
 						<span>
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/smile_icon.png" alt="" />
 							Дружный коллектив
 						</span>
-				Значимость этих проблем настолько очевидна,что реализация намеченных
+                Уделяющий индивидуальное внимание и проявляющий заботу о каждом клиенте
 			</li>
 			<li>
 						<span>
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/reward_icon.png" alt="" />
 							Профессионализм
 						</span>
-				Значимость этих проблем настолько очевидна,что реализация намеченных
-			</li>
+                Опыт успешной реализации более 100 проектов различной степени сложности
+            </li>
 			<li>
 						<span>
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/customer_icon.png" alt="" />
 							Индивидуальный подход
 						</span>
-				Значимость этих проблем настолько очевидна,что реализация намеченных
-			</li>
+                Подбор оптимального решения и быстрое реагирование на изменение потребностей заказчика
+            </li>
 		</ul>
-		<a href="#" class="btn btn-blue">Подробнее</a>
+		<a href="/about_idea/" class="btn btn-blue">Подробнее</a>
 	</div>
 </div>
 
