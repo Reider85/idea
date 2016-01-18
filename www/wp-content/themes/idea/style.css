@@ -1050,7 +1050,7 @@ header > .container {
 	list-style-type: none;
 }
 
-#sub-menu > li > a {
+#sub-menu > li > div {
 	display: block;
 	padding: 10px 20px 10px 60px;
 	border-bottom: 1px solid #e1e0e0;
@@ -1062,55 +1062,55 @@ header > .container {
 	background: url('img/sub_menu.png') no-repeat;
 }
 
-#sub-menu > li.active > a,
-#sub-menu > li > a:hover,
-#sub-menu > li > a:focus {
+#sub-menu > li.active >div > a,
+#sub-menu > li > div>a:hover,
+#sub-menu > li > div>a:focus {
 	/*color: #37a9e2;*/
 	text-decoration: none;
 }
 
-#sub-menu > li.active >  .menu-item-153 > a,
-#sub-menu > li >  .menu-item-153 > a:hover,
+#sub-menu > li.active >  .menu-item-153 >div> a,
+#sub-menu > li >  .menu-item-153 > div>a:hover,
 #sub-menu > li >  .menu-item-153 > a:focus {
 	color: #f7a80d;
 }
-#sub-menu > li.active > .menu-item-160 > a,
-#sub-menu > li > .menu-item-160 > a:hover,
-#sub-menu > li > .menu-item-160 > a:focus {
+#sub-menu > li.active > .menu-item-160 >div> a,
+#sub-menu > li > .menu-item-160 > div>a:hover,
+#sub-menu > li > .menu-item-160 > div> a:focus {
 	color: #0088cf;
 }
-#sub-menu > li.active > .menu-item-161 > a,
-#sub-menu > li > .menu-item-161 > a:hover,
-#sub-menu > li > .menu-item-161 > a:focus {
+#sub-menu > li.active > .menu-item-161 >div >div > a,
+#sub-menu > li > .menu-item-161 >div > a:hover,
+#sub-menu > li > .menu-item-161 >div > a:focus {
 	color: #67912b;
 }
-#sub-menu > li.active >  .menu-item-162 > a,
-#sub-menu > li >  .menu-item-162 > a:hover,
-#sub-menu > li >  .menu-item-162 > a:focus {
+#sub-menu > li.active >  .menu-item-162 >div > a,
+#sub-menu > li >  .menu-item-162 >div > a:hover,
+#sub-menu > li >  .menu-item-162 >div > a:focus {
 	color: #8fcb39;
 }
-#sub-menu > li.active >  .menu-item-163 > a,
-#sub-menu > li >  .menu-item-163 > a:hover,
-#sub-menu > li >  .menu-item-163 > a:focus {
+#sub-menu > li.active >  .menu-item-163 >div > a,
+#sub-menu > li >  .menu-item-163 >div > a:hover,
+#sub-menu > li >  .menu-item-163 >div > a:focus {
 	color: #a54d2f;
 }
-#sub-menu > li.active > a.flag-icon,
-#sub-menu > li > a.flag-icon:hover,
-#sub-menu > li > a.flag-icon:focus {
+#sub-menu > li.active >div > a.flag-icon,
+#sub-menu > li >div > a.flag-icon:hover,
+#sub-menu > li >div > a.flag-icon:focus {
 	color: #ce492a;
 }
-#sub-menu > li.active > a.polygr-icon,
-#sub-menu > li > a.polygr-icon:hover,
-#sub-menu > li > a.polygr-icon:focus {
+#sub-menu > li.active >div > a.polygr-icon,
+#sub-menu > li >div > .polygr-icon:hover,
+#sub-menu > li >div > a.polygr-icon:focus {
 	color: #67912b;
 }
-#sub-menu > li.active > .menu-item-166 > a,
-#sub-menu > li > .menu-item-166 > a:hover,
-#sub-menu > li > .menu-item-166 > a:focus {
+#sub-menu > li.active > .menu-item-166 >div > a,
+#sub-menu > li > .menu-item-166 >div > a:hover,
+#sub-menu > li > .menu-item-166 >div > a:focus {
 	color: #3aaaab;
 }
 
-#sub-menu > li.active > a:before,
+#sub-menu > li.active >div > a:before,
 #sub-menu > li > a:hover:before,
 #sub-menu > li > a:focus:before {
 	content: '';
@@ -1279,7 +1279,7 @@ header > .container {
 	background: #3aaaab;
 }
 
-#sub-menu ul li a {
+#sub-menu ul li div {
 	display: block;
 	padding: 5px 0;
 	padding-left: 75px;
@@ -1294,7 +1294,7 @@ header > .container {
 	color: #fff;
 }
 
-#sub-menu ul li:not(:first-child) a:before {
+#sub-menu ul li:not(:first-child) div:before {
 	/*background: #007aba;*/
 	content: '';
 	display: block;
