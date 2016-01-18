@@ -62,7 +62,7 @@
 			<ul id="social">
 				<!--<li><a class="fb" href="#" title="Facebook"></a></li>
 				<li><a class="tw" href="#" title="Twitter"></a></li>-->
-				<li><a class="vk" href="#" title="ВКонтакте"></a></li>
+				<li><a class="vk" href="http://vk.com/idea_163" title="ВКонтакте"></a></li>
 				<li id="search">
 					<button src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/search_icon.png" title="Поиск"></button>
 					<form>

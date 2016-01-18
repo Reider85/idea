@@ -119,7 +119,7 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 					<p>Товарищи, дальнейшее развитие различных форм деятельности играет важную роль в формировании систем массового участия.</p>
 				</li>
 			</ul>
-			<a href="#" class="btn btn-orange">Посмотреть все</a>
+			<a href="/category/news/" class="btn btn-orange">Посмотреть все</a>
 		</div>
 		<div id="secondary" class="secondary" style="display:none;">
 
