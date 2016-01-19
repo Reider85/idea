@@ -1254,28 +1254,28 @@ header > .container {
 	/*background: #37a9e2;*/
 }
 
-#sub-menu li:nth-of-type(1) > div > a + ul {
+#sub-menu li:nth-of-type(1) > div + ul {
 	background: #f7a80d;
 }
-#sub-menu li:nth-of-type(2) > div > a + ul {
+#sub-menu li:nth-of-type(2) > div + ul {
 	background: #0088cf;
 }
-#sub-menu li:nth-of-type(3) > div > a + ul {
+#sub-menu li:nth-of-type(3) > div + ul {
 	background: #67912b;
 }
-#sub-menu li:nth-of-type(4) > div > a + ul {
+#sub-menu li:nth-of-type(4) > div + ul {
 	background: #8fcb39;
 }
-#sub-menu li:nth-of-type(5) > div > a + ul {
+#sub-menu li:nth-of-type(5) > div + ul {
 	background: #a54d2f;
 }
-#sub-menu li:nth-of-type(6) > div > a + ul {
+#sub-menu li:nth-of-type(6) > div  + ul {
 	background: #ce492a;
 }
-#sub-menu li:nth-of-type(7) > div > a + ul {
+#sub-menu li:nth-of-type(7) > div + ul {
 	background: #67912b;
 }
-#sub-menu li:nth-of-type(8) > div > a + ul {
+#sub-menu li:nth-of-type(8) > div  + ul {
 	background: #3aaaab;
 }
 
@@ -1305,44 +1305,44 @@ header > .container {
 	width: 80%;
 }
 
-#sub-menu li:nth-of-type(1) > div > a + ul li a:hover,
-#sub-menu li:nth-of-type(1) > div > a + ul li a:focus,
-#sub-menu li:nth-of-type(1) > div > a + ul li:not(:first-child) a:before {
+#sub-menu li:nth-of-type(1) > div + ul li div:hover,
+#sub-menu li:nth-of-type(1) > div + ul li div:focus,
+#sub-menu li:nth-of-type(1) > div + ul li:not(:first-child) div:before {
 	background: #e49b0c;
 }
-#sub-menu li:nth-of-type(2) > div > a + ul li a:hover,
-#sub-menu li:nth-of-type(2) > div > a + ul li a:focus,
-#sub-menu li:nth-of-type(2) > div > a + ul li:not(:first-child) a:before {
+#sub-menu li:nth-of-type(2) > div  + ul li div:hover,
+#sub-menu li:nth-of-type(2) > div  + ul li div:focus,
+#sub-menu li:nth-of-type(2) > div  + ul li:not(:first-child) div:before {
 	background: #007dbf;
 }
-#sub-menu li:nth-of-type(3) > div > a + ul li a:hover,
-#sub-menu li:nth-of-type(3) > div > a + ul li a:focus,
-#sub-menu li:nth-of-type(3) > div > a + ul li:not(:first-child) a:before {
+#sub-menu li:nth-of-type(3) > div  + ul li div:hover,
+#sub-menu li:nth-of-type(3) > div  + ul li div:focus,
+#sub-menu li:nth-of-type(3) > div  + ul li:not(:first-child) div:before {
 	background: #5f8628;
 }
-#sub-menu li:nth-of-type(4) > div > a + ul li a:hover,
-#sub-menu li:nth-of-type(4) > div > a + ul li a:focus,
-#sub-menu li:nth-of-type(4) > div > a + ul li:not(:first-child) a:before {
+#sub-menu li:nth-of-type(4) > div  + ul li div:hover,
+#sub-menu li:nth-of-type(4) > div  + ul li div:focus,
+#sub-menu li:nth-of-type(4) > div  + ul li:not(:first-child) div:before {
 	background: #84bb35;
 }
-#sub-menu li:nth-of-type(5) > div > a + ul li a:hover,
-#sub-menu li:nth-of-type(5) > div > a + ul li a:focus,
-#sub-menu li:nth-of-type(5) > div > a + ul li:not(:first-child) a:before {
+#sub-menu li:nth-of-type(5) > div  + ul li div:hover,
+#sub-menu li:nth-of-type(5) > div  + ul li div:focus,
+#sub-menu li:nth-of-type(5) > div  + ul li:not(:first-child) div:before {
 	background: #98472b;
 }
-#sub-menu li:nth-of-type(6) > div > a + ul li a:hover,
-#sub-menu li:nth-of-type(6) > div > a + ul li a:focus,
-#sub-menu li:nth-of-type(6) > div > a + ul li:not(:first-child) a:before {
+#sub-menu li:nth-of-type(6) > div  + ul li div:hover,
+#sub-menu li:nth-of-type(6) > div  + ul li div:focus,
+#sub-menu li:nth-of-type(6) > div  + ul li:not(:first-child) div:before {
 	background: #be4327;
 }
-#sub-menu li:nth-of-type(7) > div > a + ul li a:hover,
-#sub-menu li:nth-of-type(7) > div > a + ul li a:focus,
-#sub-menu li:nth-of-type(7) > div > a + ul li:not(:first-child) a:before {
+#sub-menu li:nth-of-type(7) > div  + ul li div:hover,
+#sub-menu li:nth-of-type(7) > div  + ul li div:focus,
+#sub-menu li:nth-of-type(7) > div  + ul li:not(:first-child) div:before {
 	background: #5f8628;
 }
-#sub-menu li:nth-of-type(8) > div > a + ul li a:hover,
-#sub-menu li:nth-of-type(8) > div > a + ul li a:focus,
-#sub-menu li:nth-of-type(8) > div > a + ul li:not(:first-child) a:before {
+#sub-menu li:nth-of-type(8) > div  + ul li div:hover,
+#sub-menu li:nth-of-type(8) > div  + ul li div:focus,
+#sub-menu li:nth-of-type(8) > div  + ul li:not(:first-child) div:before {
 	background: #359d9e;
 }
 
