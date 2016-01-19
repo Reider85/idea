@@ -28,10 +28,10 @@ $().ready(function () {
 				$(this).toggleClass('active');
 			}
 		}
-	).find('ul').click(function(e) {
-		return false;
+	);
+	$('#sub-menu > li ul a').click(function(event){
+		event.stopPropagation();
 	});
-	
 	// title content
 	var titleContentHeight = $('#title-content img.pull-right').height();
 	$('#title-content').css({
