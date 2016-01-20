@@ -16,19 +16,27 @@ $().ready(function () {
 			event.stopPropagation();
 		});
 	});
-	
+
+	function toggleSlide(ulObj){
+		$('#sub-menu ul').stop().slideUp(500);
+		$(ulObj).stop().slideToggle(500);
+		$('#sub-menu .parent').not($(ulObj).parent()).removeClass('active');
+		if ($(ulObj).parent().hasClass('parent')) {
+			$(ulObj).parent().addClass('active');
+		}
+	}
 	// sub menu
 	$('#sub-menu > li').has('ul').addClass('parent');
 	$('#sub-menu > li').click(
 		function (event) {
-			$('#sub-menu ul').stop().slideUp(500);
-			$(this).find('ul').stop().slideToggle(500);
-			$('#sub-menu .parent').not(this).removeClass('active');
-			if ($(this).hasClass('parent')) {
-				$(this).toggleClass('active');
-			}
+			toggleSlide($(this).find('ul'));
 		}
 	);
+
+	$('#sub-menu > li').has('ul').find('div > a').click(function(event){
+		toggleSlide($(this).parent().parent().find('ul'));
+		return false;
+	});
 	$('#sub-menu > li ul a').click(function(event){
 		event.stopPropagation();
 	});

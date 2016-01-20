@@ -1061,7 +1061,10 @@ header > .container {
 	position: relative;
 	background: url('img/sub_menu.png') no-repeat;
 }
-
+#sub-menu > li > div > a{
+	font-family: MyriadProBold;
+	color: #444;
+}
 #sub-menu > li.active > div > a,
 #sub-menu > li > div>a:hover,
 #sub-menu > li > div>a:focus {
@@ -1071,7 +1074,7 @@ header > .container {
 
 #sub-menu > li.active > div> a,
 #sub-menu > li:nth-of-type(1) > div>a:hover,
-#sub-menu > li:nth-of-type(1) > a:focus {
+#sub-menu > li:nth-of-type(1) > div>a:focus {
 	color: #f7a80d;
 }
 #sub-menu > li.active+li.active>div> a,
@@ -1286,7 +1289,9 @@ header > .container {
 	color: #f5f5f5;
 	position: relative;
 }
-
+#sub-menu ul li div a{
+	color: #f5f5f5;
+}
 #sub-menu ul li a:hover,
 #sub-menu ul li a:focus {
 	/*background: #007aba;*/
@@ -1353,7 +1358,9 @@ header > .container {
 }
 
 #sub-menu ul li a:hover:after,
-#sub-menu ul li a:focus:after {
+#sub-menu ul li a:focus:after,
+#sub-menu ul li div:hover:after,
+#sub-menu ul li div:focus:after{
 	content: '›';
 	font-size: 22px;
 	position: absolute;
