@@ -1077,37 +1077,37 @@ header > .container {
 #sub-menu > li:nth-of-type(1) > div>a:focus {
 	color: #f7a80d;
 }
-#sub-menu > li.active+li.active>div> a,
+#sub-menu > li+li.active>div> a,
 #sub-menu > li:nth-of-type(2) > div>a:hover,
 #sub-menu > li:nth-of-type(2) > div> a:focus {
 	color: #0088cf;
 }
-#sub-menu > li.active+li.active+li.active >div > a,
+#sub-menu > li+li+li.active >div > a,
 #sub-menu > li:nth-of-type(3) >div > a:hover,
 #sub-menu > li:nth-of-type(3) >div > a:focus {
 	color: #67912b;
 }
-#sub-menu > li.active+li.active+li.active+li.active >div > a,
+#sub-menu > li+li+li+li.active >div > a,
 #sub-menu > li:nth-of-type(4) >div > a:hover,
 #sub-menu > li:nth-of-type(4) >div > a:focus {
 	color: #8fcb39;
 }
-#sub-menu > li.active+li.active+li.active+li.active+li.active >div > a,
+#sub-menu > li+li+li+li+li.active >div > a,
 #sub-menu > li:nth-of-type(5) >div > a:hover,
 #sub-menu > li:nth-of-type(5) >div > a:focus {
 	color: #a54d2f;
 }
-#sub-menu > li.active+li.active+li.active+li.active+li.active+li.active >div > a,
+#sub-menu > li+li+li+li+li+li.active >div > a,
 #sub-menu > li:nth-of-type(6) >div > a:hover,
 #sub-menu > li:nth-of-type(6) >div > a:focus {
 	color: #ce492a;
 }
-#sub-menu > li.active+li.active+li.active+li.active+li.active+li.active+li.active >div > a,
+#sub-menu > li+li+li+li+li+li+li.active >div > a,
 #sub-menu > li:nth-of-type(7) >div > a:hover,
 #sub-menu > li:nth-of-type(7) >div > a:focus {
 	color: #67912b;
 }
-#sub-menu > li.active+li.active+li.active+li.active+li.active+li.active+li.active+li.active >div > a,
+#sub-menu > li+li+li+li+li+li+li+li.active >div > a,
 #sub-menu > li:nth-of-type(8) >div > a:hover,
 #sub-menu > li:nth-of-type(8) >div > a:focus {
 	color: #3aaaab;
@@ -1131,37 +1131,37 @@ header > .container {
 #sub-menu > li:nth-of-type(1) > div > a:focus:before {
 	background: #f7a80d;
 }
-#sub-menu > li.active+li.active > div > a:before,
+#sub-menu > li+li.active > div > a:before,
 #sub-menu > li:nth-of-type(2) > div > a:hover:before,
 #sub-menu > li:nth-of-type(2) > div > a:focus:before {
 	background: #0088cf;
 }
-#sub-menu > li.active+li.active+li.active > div > a:before,
+#sub-menu > li+li+li.active > div > a:before,
 #sub-menu > li:nth-of-type(3) > div > a:hover:before,
 #sub-menu > li:nth-of-type(3) > div > a:focus:before {
 	background: #67912b;
 }
-#sub-menu > li.active+li.active+li.active+li.active > div > a:before,
+#sub-menu > li+li+li+li.active > div > a:before,
 #sub-menu > li:nth-of-type(4) > div > a:hover:before,
 #sub-menu > li:nth-of-type(4) > div > a:focus:before {
 	background: #8fcb39;
 }
-#sub-menu > li.active+li.active+li.active+li.active+li.active > div > a:before,
+#sub-menu > li+li+li+li+li.active > div > a:before,
 #sub-menu > li:nth-of-type(5) > div > a:hover:before,
 #sub-menu > li:nth-of-type(5) > div > a:focus:before {
 	background: #a54d2f;
 }
-#sub-menu > li.active+li.active+li.active+li.active+li.active+li.active > div > a:before,
+#sub-menu > li+li+li+li+li+li.active > div > a:before,
 #sub-menu > li:nth-of-type(6) > div > a:hover:before,
 #sub-menu > li:nth-of-type(6) > div > a:focus:before {
 	background: #ce492a;
 }
-#sub-menu > li.active+li.active+li.active+li.active+li.active+li.active+li.active > div > a:before,
+#sub-menu > li+li+li+li+li+li+li.active > div > a:before,
 #sub-menu > li:nth-of-type(7) > div > a:hover:before,
 #sub-menu > li:nth-of-type(7) > div > a:focus:before {
 	background: #67912b;
 }
-#sub-menu > li.active+li.active+li.active+li.active+li.active+li.active+li.active+li.active > div > a:before,
+#sub-menu > li+li+li+li+li+li+li+li.active > div > a:before,
 #sub-menu > li:nth-of-type(8) > div > a:hover:before,
 #sub-menu > li:nth-of-type(8) > div > a:focus:before {
 	background: #3aaaab;
@@ -1196,7 +1196,7 @@ header > .container {
 #sub-menu > li:nth-of-type(2) > div {
 	background-position: -548px -28px;
 }
-#sub-menu li.active+li.active > div,
+#sub-menu li+li.active > div,
 #sub-menu li:nth-of-type(2) > div:hover,
 #sub-menu li:nth-of-type(2) > div:focus {
 	background-position: -218px -358px;
@@ -1204,7 +1204,7 @@ header > .container {
 #sub-menu > li:nth-of-type(3) > div {
 	background-position: -505px -71px;
 }
-#sub-menu li.active+li.active+li.active > div,
+#sub-menu li+li+li.active > div,
 #sub-menu li:nth-of-type(3) > div:hover,
 #sub-menu li:nth-of-type(3) > div:focus {
 	background-position: -176px -401px;
@@ -1212,7 +1212,7 @@ header > .container {
 #sub-menu > li:nth-of-type(4)> div {
 	background-position: -468px -110px;
 }
-#sub-menu li.active+li.active+li.active+li.active > div,
+#sub-menu li+li+li+li.active > div,
 #sub-menu li:nth-of-type(4) > div:hover,
 #sub-menu li:nth-of-type(4) > div:focus {
 	background-position: -138px -440px;
@@ -1220,7 +1220,7 @@ header > .container {
 #sub-menu li:nth-of-type(5) > div {
 	background-position: -427px -151px;
 }
-#sub-menu li.active+li.active+li.active+li.active+li.active > div,
+#sub-menu li+li+li+li+li.active > div,
 #sub-menu li:nth-of-type(5) > div:hover,
 #sub-menu li:nth-of-type(5) > div:focus {
 	background-position: -97px -481px;
@@ -1228,7 +1228,7 @@ header > .container {
 #sub-menu li:nth-of-type(6) > div {
 	background-position: -385px -192px;
 }
-#sub-menu li.active+li.active+li.active+li.active+li.active+li.active > div,
+#sub-menu li+li+li+li+li+li.active > div,
 #sub-menu li:nth-of-type(6) > div:hover,
 #sub-menu li:nth-of-type(6) > div:focus {
 	background-position: -56px -522px;
@@ -1236,7 +1236,7 @@ header > .container {
 #sub-menu li:nth-of-type(7) > div {
 	background-position: -346px -230px;
 }
-#sub-menu li.active+li.active+li.active+li.active+li.active+li.active+li.active > div,
+#sub-menu li+li+li+li+li+li+li.active > div,
 #sub-menu li:nth-of-type(7) > div:hover,
 #sub-menu li:nth-of-type(7) > div:focus {
 	background-position: -17px -560px;
@@ -1244,7 +1244,7 @@ header > .container {
 #sub-menu li:nth-of-type(8) > div {
 	background-position: -307px -269px;
 }
-#sub-menu li.active+li.active+li.active+li.active+li.active+li.active+li.active+li.active > div,
+#sub-menu li+li+li+li+li+li+li+li.active > div,
 #sub-menu li:nth-of-type(8) > div:hover,
 #sub-menu li:nth-of-type(8) > div:focus {
 	background-position: 22px -599px;
@@ -1374,7 +1374,7 @@ header > .container {
 
 #left-column h2 {
 	font-family: MyriadProBold;
-	font-weight: noraml;
+	font-weight: normal;
 	font-size: 16px;
 	color: #adaeae;
 	text-transform: uppercase;

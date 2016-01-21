@@ -33,10 +33,14 @@ $().ready(function () {
 		}
 	);
 
-	$('#sub-menu > li').has('ul').find('div > a').click(function(event){
-		toggleSlide($(this).parent().parent().find('ul'));
-		return false;
+	$('#sub-menu > li>div > a').click(function(event){
+		var li=$(this).parent().parent();
+		if ($(li).has('ul')) {
+			toggleSlide($(this).parent().parent().find('ul'));
+			return false;
+		}
 	});
+
 	$('#sub-menu > li ul a').click(function(event){
 		event.stopPropagation();
 	});
