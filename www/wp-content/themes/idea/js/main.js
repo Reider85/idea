@@ -1,5 +1,13 @@
 $().ready(function () {
-	
+	if ($('#sub-menu').length>0) {
+		var currentPageItem=$('.current_page_item');
+		if ($(currentPageItem).parent().length > 0) {
+			if ($(currentPageItem).parent().hasClass('sub-menu')) {
+				$(currentPageItem).parent().parent().addClass('current_page_item');
+			}
+			$(currentPageItem).parent().show();
+		}
+	}
 	// search field
 	$.fn.slideFadeToggle = function(speed, easing, callback){
       return this.animate({opacity: 'toggle'}, speed, easing, callback);
@@ -20,22 +28,22 @@ $().ready(function () {
 	function toggleSlide(ulObj){
 		$('#sub-menu ul').stop().slideUp(500);
 		$(ulObj).stop().slideToggle(500);
-		$('#sub-menu .parent').not($(ulObj).parent()).removeClass('active');
+		$('#sub-menu .parent').not($(ulObj).parent()).removeClass('current_page_item');
 		if ($(ulObj).parent().hasClass('parent')) {
-			$(ulObj).parent().addClass('active');
+			$(ulObj).parent().addClass('current_page_item');
 		}
 	}
 	// sub menu
 	$('#sub-menu > li').has('ul').addClass('parent');
-	$('#sub-menu > li').click(
+	$('#sub-menu > li').has('ul').click(
 		function (event) {
 			toggleSlide($(this).find('ul'));
 		}
 	);
 
-	$('#sub-menu > li>div > a').click(function(event){
+	$('#sub-menu > li > div > a').click(function(event){
 		var li=$(this).parent().parent();
-		if ($(li).has('ul')) {
+		if ($(li).find('ul').length>0) {
 			toggleSlide($(this).parent().parent().find('ul'));
 			return false;
 		}
