@@ -15,7 +15,7 @@ get_header(); ?>
 	<div id="right-column">
 		<?php get_template_part( 'social');?>
 		<?php $paged = (get_query_var('page')) ? get_query_var('page') : 1;?>
-		<?php $query=new WP_Query(['category_name'=>'news','posts_per_page'=>3,'paged'=>$paged]);?>
+		<?php $query=new WP_Query(array('category_name'=>'news','posts_per_page'=>3,'paged'=>$paged));?>
 		<h1><span><?php echo $query->get_queried_object()->name?></span></h1>
 
 		<ul id="news">
