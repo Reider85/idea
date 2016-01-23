@@ -50,29 +50,27 @@
 			</div>
 		</div>
 	</div>
-	<div id="nav">
-		<div class="container">
-			<ul id="main-menu">
-				<li><a href="/index.php" class="active">Главная</a></li>
-				<li><a href="/about_idea/">О компании</a></li>
-				<li><a href="#">Услуги</a></li>
-				<li><a href="/category/news/">Новости</a></li>
-				<li><a href="/contacts/">Контакты</a></li>
-			</ul>
-			<ul id="social">
-				<!--<li><a class="fb" href="#" title="Facebook"></a></li>
-				<li><a class="tw" href="#" title="Twitter"></a></li>-->
-				<li><a class="vk" href="http://vk.com/idea_163" title="ВКонтакте"></a></li>
-				<li id="search">
-					<button src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/search_icon.png" title="Поиск"></button>
-					<form>
-						<input type="text" value="" />
-						<input class="btn btn-default" type="submit" value="Найти" />
-					</form>
-		</div>
-		</li>
-		</ul>
-	</div>
-	</div>
 </header>
-
+<div id="nav">
+	<div class="container">
+		<ul id="main-menu">
+			<li><a href="/index.php" class="active">Главная</a></li>
+			<li><a href="/about_idea/">О компании</a></li>
+			<li><a href="#">Услуги</a></li>
+			<li><a href="/category/news/">Новости</a></li>
+			<li><a href="/contacts/">Контакты</a></li>
+		</ul>
+		<ul id="social">
+			<!--<li><a class="fb" href="#" title="Facebook"></a></li>
+            <li><a class="tw" href="#" title="Twitter"></a></li>-->
+			<li><a class="vk" href="http://vk.com/idea_163" title="ВКонтакте"></a></li>
+			<li id="search">
+				<button src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/search_icon.png" title="Поиск"></button>
+				<form>
+					<input type="text" value="" />
+					<input class="btn btn-default" type="submit" value="Найти" />
+				</form>
+	</div>
+	</li>
+	</ul>
+</div>

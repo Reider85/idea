@@ -10,9 +10,9 @@ $().ready(function () {
 	}
 	// search field
 	$.fn.slideFadeToggle = function(speed, easing, callback){
-      return this.animate({opacity: 'toggle'}, speed, easing, callback);
-    };
-    $('#search button').click(function(){
+		return this.animate({opacity: 'toggle'}, speed, easing, callback);
+	};
+	$('#search button').click(function(){
 		$(this).toggleClass('active');
 		$('#search form').fadeToggle(200);
     });
@@ -59,31 +59,47 @@ $().ready(function () {
 	});
 	
 	// gallery - http://pgwjs.com/pgwslideshow/
-	if ($('.right .pgwSlideshow').length>0) {
+	if ($('*').is('.pgwSlideshow')) {
 		$('.right .pgwSlideshow').pgwSlideshow({
 			transitionEffect: 'fading',
 			displayControls: false
 		});
-	}
-	if ($('.slider .pgwSlideshow').length>0) {
 		$('.slider .pgwSlideshow').pgwSlideshow({
 			displayList: false
 		});
 	}
+
 	// placement
-	if ($('.selectpicker').length>0) {
+	if ($('*').is('.selectpicker')) {
 		$('.selectpicker').selectpicker({
 			style: 'btn-info',
 			size: 4
 		});
 	}
+	$("#placement").change(function(){
+		$("#" + this.value).show().siblings().hide();
+	});
+	$("#placement").change();
 
-	if ($("#placement").length>0) {
+	// fix header / 15.01.2016
 
-		$("#placement").change(function () {
-			$("#" + this.value).show().siblings().hide();
-		});
-
-		$("#placement").change();
+	function fixHeader() {
+		var x = $(document).scrollTop();
+		if (x > 60) {
+			$('header').css({
+				boxShadow: '0 0 5px #999'
+			});
+		} else {
+			$('header').css({
+				boxShadow: 'none'
+			});
+		}
 	}
+
+	$(document).scroll(
+		function() {
+			fixHeader();
+		}
+	);
+
 });

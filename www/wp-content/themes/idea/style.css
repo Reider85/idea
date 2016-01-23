@@ -127,7 +127,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
 	margin: 0;
-	margin-top: 164px;
+	/*margin-top: 164px;*/
+	margin-top: 104px;
 	font-family: MyriadProRegular, sans-serif;
 	background: #eef0f3;
 	color: #333;
@@ -351,9 +352,9 @@ a.btn {
 
 header {
 	background: #009ada;
-	-webkit-box-shadow: 0 0 5px #999;
+	/*-webkit-box-shadow: 0 0 5px #999;
 	-moz-box-shadow: 0 0 5px #999;
-	box-shadow: 0 0 5px #999;
+	box-shadow: 0 0 5px #999;*/
 	position: relative;
 	z-index: 1000;
 }
@@ -477,6 +478,11 @@ header > .container {
 #nav {
 	background: #fff;
 	white-space: nowrap;
+	-webkit-box-shadow: 0 0 5px #999;
+	-moz-box-shadow: 0 0 5px #999;
+	box-shadow: 0 0 5px #999;
+	position: relative;
+	z-index: 10;
 }
 
 #nav .container {
