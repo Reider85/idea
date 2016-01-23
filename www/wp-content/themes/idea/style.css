@@ -2147,6 +2147,10 @@ footer {
 	color: #fff;
 	padding-bottom: 50px;
 }
+footer.entry-footer{
+	background:transparent;
+	padding:0;
+}
 
 .inner footer {
 	margin-top: 30px;
