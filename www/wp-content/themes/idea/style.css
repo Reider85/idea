@@ -1401,14 +1401,22 @@ header > .container {
 	border-bottom: 1px solid #e1e0e0;
 }
 
-#last-news ul li h3,
+#last-news li h3,
+#last-news li h2,
 #news h2 {
 	padding-right: 60px;
 	font-family: MyriadProBold;
 	font-size: 17px;
 	color: #333;
 }
-
+#last-news li h2{
+	padding-bottom:0;
+	margin-bottom:0;
+}
+#last-news p:first-of-type{
+	padding-top:0;
+	padding-bottom:0;
+}
 .date {
 	color: #929ea2;
 	font-size: 13px;
@@ -2192,8 +2200,12 @@ ul#news li h2:last-of-type{
 ul#news li p img{
 	margin-top:-36px;
 }
-
-
+#last-news img{
+	display:none;
+}
+#last-news li h2:last-of-type{
+	display:none;
+}
 
 
 

@@ -23,101 +23,29 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 			</nav><!-- .main-navigation -->
 		<?php endif; ?>
 		<!-- sub menu -->
-<!--		<div class="menu">-->
-<!--			<ul id="sub-menu">-->
-<!--				<li>-->
-<!--					<a class="outdoor-icon" href="#">Наружная реклама</a>-->
-<!--					<ul>-->
-<!--						<li><a href="#">Вывески</a></li>-->
-<!--						<li><a href="#">Информационные стенды</a></li>-->
-<!--						<li><a href="#">Объемные буквы</a></li>-->
-<!--						<li><a href="#">Оформление мест продаж</a></li>-->
-<!--						<li><a href="#">Световые короба</a></li>-->
-<!--						<li><a href="#">Таблички указатели</a></li>-->
-<!--						<li><a href="#">Штендеры</a></li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a class="print-icon" href="#">Широкоформатная печать</a>-->
-<!--					<ul>-->
-<!--						<li><a href="#">Вывески</a></li>-->
-<!--						<li><a href="#">Информационные стенды</a></li>-->
-<!--						<li><a href="#">Объемные буквы</a></li>-->
-<!--						<li><a href="#">Оформление мест продаж</a></li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a class="uv-icon" href="#">UV-печать</a>-->
-<!--					<ul>-->
-<!--						<li><a href="#">Световые короба</a></li>-->
-<!--						<li><a href="#">Таблички указатели</a></li>-->
-<!--						<li><a href="#">Штендеры</a></li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a class="media-icon" href="#">Медиа-фасады, экраны</a>-->
-<!--					<ul>-->
-<!--						<li><a href="#">Световые короба</a></li>-->
-<!--						<li><a href="#">Таблички указатели</a></li>-->
-<!--						<li><a href="#">Штендеры</a></li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a class="adv-icon" href="#">Размещение рекламы</a>-->
-<!--					<ul>-->
-<!--						<li><a href="#">Световые короба</a></li>-->
-<!--						<li><a href="#">Таблички указатели</a></li>-->
-<!--						<li><a href="#">Штендеры</a></li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a class="flag-icon" href="#">Флаги, флагштоки</a>-->
-<!--					<ul>-->
-<!--						<li><a href="#">Световые короба</a></li>-->
-<!--						<li><a href="#">Таблички указатели</a></li>-->
-<!--						<li><a href="#">Штендеры</a></li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a class="polygr-icon" href="#">Полиграфия</a>-->
-<!--					<ul>-->
-<!--						<li><a href="#">Световые короба</a></li>-->
-<!--						<li><a href="#">Таблички указатели</a></li>-->
-<!--						<li><a href="#">Штендеры</a></li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a class="cloth-icon" href="#">Корпоративная одежда</a>-->
-<!--					<ul>-->
-<!--						<li><a href="#">Световые короба</a></li>-->
-<!--						<li><a href="#">Таблички указатели</a></li>-->
-<!--						<li><a href="#">Штендеры</a></li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--			</ul>-->
-<!--		</div>-->
 		<!-- last news -->
 		<h2>Новости и акции</h2>
+		<?php $news=new WP_Query(array('category_name'=>'news','posts_per_page'=>2,'paged'=>1));?>
 		<div id="last-news">
 			<ul>
-				<li>
-					<h3>Новая акция</h3>
-					<div class="date">14.03.2015</div>
-					<div class="validity">с 18.05.2015 до 24.09.2015</div>
-					<p>Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
-				</li>
-				<li>
-					<h3>Новая акция</h3>
-					<div class="date">14.03.2015</div>
-					<div class="validity">с 18.05.2015 до 24.09.2015</div>
-					<p>Постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует.</p>
-				</li>
-				<li>
-					<h3>Новая акция</h3>
-					<div class="date">14.03.2015</div>
-					<div class="validity">с 18.05.2015 до 24.09.2015</div>
-					<p>Товарищи, дальнейшее развитие различных форм деятельности играет важную роль в формировании систем массового участия.</p>
-				</li>
+				<?php if ( $news->have_posts() ) : ?>
+
+					<?php
+
+					// Start the Loop.
+					while ( $news->have_posts() ) : $news->the_post();
+
+						/*
+                         * Include the post format-specific template for the content. If you want to
+                         * use this in a child theme, then include a file called called content-___.php
+                         * (where ___ is the post format) and that will be used instead.
+                         */
+						get_template_part( 'content','short' );
+
+					endwhile;
+
+				endif;
+				?>
 			</ul>
 			<a href="/category/news/" class="btn btn-orange">Посмотреть все</a>
 		</div>
