@@ -2206,7 +2206,9 @@ ul#news li p img{
 #last-news li h2:last-of-type{
 	display:none;
 }
-
+#last-news .more-link{
+	display:none;
+}
 
 
 
