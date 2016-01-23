@@ -142,7 +142,9 @@ body.inner {
 a {
 	outline: none !important;
 }
-
+.admin-bar .navbar-fixed-top{
+	top:30px;
+}
 .inner p,
 #right-column ul {
 	font-size: 14px;
