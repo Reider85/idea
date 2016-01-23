@@ -14,14 +14,17 @@ get_header(); ?>
 <?php get_sidebar()?>
 	<div id="right-column">
 		<?php get_template_part( 'social');?>
-		<h1><span><?php echo $wp_query->get_queried_object()->name?></span></h1>
+		<?php $paged = (get_query_var('page')) ? get_query_var('page') : 1;?>
+		<?php $query=new WP_Query(['category_name'=>'news','posts_per_page'=>3,'paged'=>$paged]);?>
+		<h1><span><?php echo $query->get_queried_object()->name?></span></h1>
 
 		<ul id="news">
-			<?php if ( have_posts() ) : ?>
+			<?php if ( $query->have_posts() ) : ?>
 
 			<?php
+
 					// Start the Loop.
-					while ( have_posts() ) : the_post();
+					while ( $query->have_posts() ) : $query->the_post();
 
 					/*
 					 * Include the post format-specific template for the content. If you want to
@@ -31,15 +34,8 @@ get_header(); ?>
 					get_template_part( 'content','short' );
 
 					endwhile;
-					// Previous/next page navigation.
-					wp_link_pages( array(
-							'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
-							'after'       => '</div>',
-							'link_before' => '<span>',
-							'link_after'  => '</span>',
-							'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
-							'separator'   => '<span class="screen-reader-text">, </span>',
-					) );
+
+					kama_pagenavi('','',true,array(),$query);
 
 				else :
 					// If no content, include the "No posts found" template.
