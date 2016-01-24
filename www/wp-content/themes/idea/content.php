@@ -17,8 +17,8 @@
 		twentyfifteen_post_thumbnail();
 	?>
 
-	<?php $categories=get_the_category();$category=$categories[0];;?>
-	<div id="<?php if ($category->cat_ID==2):?>news<?php else:?><?php echo $category->category_nicename?><?php endif;?>">
+	<?php $categories=get_the_category();$category=$categories[0];?>
+	<div class="<?php if ($category->cat_ID==8):?>inner<?php endif;?>" id="<?php if ($category->cat_ID==2):?>news<?php else:?><?php echo $category->category_nicename?><?php endif;?>">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
@@ -36,7 +36,11 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
+	<?php if ($category->cat_ID==8):?>
+		<?php $query=new WP_Query(array('p'=>448));?>
+		<?php $post=$query->get_posts();?>
+		<?php echo($post[0]->post_content);?>
+	<?php endif;?>
 	<?php
 		// Author bio.
 		if ( is_single() && get_the_author_meta( 'description' ) ) :

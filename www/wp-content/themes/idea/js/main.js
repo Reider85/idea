@@ -127,6 +127,17 @@ $(document).ready(function () {
 
 	});
 
+	$('.mainWorks ul li:first-child button').click(function(e){
+		if ($(this).hasClass('btn-blue')){
+			$('.mainWorks ul li button').removeClass('btn-blue');
+			$('.mainWorks ul li button').addClass('btn-default');
+		} else {
+			$('.mainWorks ul li button').removeClass('btn-default');
+			$('.mainWorks ul li button').addClass('btn-blue');
+		}
+		renewMainPics();
+	});
+
 	$('#map .btn').click(function(){
 		if (confirm("Отправить сообщение?")){
 			if (($('input[name=address]').val()!='')&&
@@ -137,16 +148,5 @@ $(document).ready(function () {
 				alert('Заполните все поля');
 			}
 		}
-	});
-
-	$('.mainWorks ul li:first-child button').click(function(e){
-		if ($(this).hasClass('btn-blue')){
-			$('.mainWorks ul li button').removeClass('btn-blue');
-			$('.mainWorks ul li button').addClass('btn-default');
-		} else {
-			$('.mainWorks ul li button').removeClass('btn-default');
-			$('.mainWorks ul li button').addClass('btn-blue');
-		}
-		renewMainPics();
 	});
 });
