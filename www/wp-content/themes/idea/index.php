@@ -177,36 +177,9 @@ get_header(); ?>
 	</div>
 </div>
 
-<!-- works -->
-<h1 class="main-title container"><strong>Наши <span>работы</span></strong></h1>
-<div id="works" class="container">
-	<ul>
-		<li><button class="btn btn-blue">Все</button></li>
-		<li><button class="btn btn-default">Наружная реклама</button></li>
-		<li><button class="btn btn-default">Объемные буквы</button></li>
-		<li><button class="btn btn-default">Оформление мест продаж</button></li>
-		<li><button class="btn btn-default">Световые коробы</button></li>
-		<li><button class="btn btn-default">Флаги</button></li>
-		<li><button class="btn btn-default">Корпоративная одежда</button></li>
-		<li><button class="btn btn-default">Таблички указатели</button></li>
-		<li><button class="btn btn-default">UV-печать</button></li>
-		<li><button class="btn btn-default">Информационные стенды</button></li>
-		<li><button class="btn btn-default">Вывески</button></li>
-	</ul>
-	<div>
-		<a href="#" title="Наименование работы"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/works/work_01.jpg" alt="" /></a>
-		<a href="#" title="Наименование работы"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/works/work_02.jpg" alt="" /></a>
-		<a href="#" title="Наименование работы"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/works/work_03.jpg" alt="" /></a>
-		<a href="#" title="Наименование работы"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/works/work_04.jpg" alt="" /></a>
-		<a href="#" title="Наименование работы"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/works/work_05.jpg" alt="" /></a>
-		<a href="#" title="Наименование работы"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/works/work_06.jpg" alt="" /></a>
-		<a href="#" title="Наименование работы"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/works/work_07.jpg" alt="" /></a>
-		<a href="#" title="Наименование работы"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/works/work_08.jpg" alt="" /></a>
-		<a href="#" title="Наименование работы"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/works/work_09.jpg" alt="" /></a>
-		<a href="#" title="Наименование работы"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/works/work_10.jpg" alt="" /></a>
-	</div>
-	<a href="#" class="btn btn-blue">Посмотреть все работы</a>
-</div>
+<?php $query=new WP_Query(array('p'=>387));?>
+<?php $post=$query->get_posts();?>
+<?php echo($post[0]->post_content);?>
 
 <!-- map -->
 <div id="map">

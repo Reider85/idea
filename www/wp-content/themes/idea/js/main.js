@@ -102,4 +102,39 @@ $(document).ready(function () {
 		}
 	);
 
+	function renewMainPics(){
+		$('#works a').hide();
+		$('.btn-blue').each(function(){
+			var id=$(this).attr('id');
+			$('#works a.'+id).show();
+		});
+	}
+
+	$('.mainWorks ul li').not(':first-child').find('button').click(function(e){
+
+		if ($(this).hasClass('btn-blue')){
+			$(this).removeClass('btn-blue');
+			$(this).addClass('btn-default');
+		} else {
+			$(this).removeClass('btn-default');
+			$(this).addClass('btn-blue');
+			$('.mainWorks ul li button').eq(0).addClass('btn-default');
+			$('.mainWorks ul li button').eq(0).removeClass('btn-blue');
+		}
+
+		renewMainPics();
+
+
+	});
+
+	$('.mainWorks ul li:first-child button').click(function(e){
+		if ($(this).hasClass('btn-blue')){
+			$('.mainWorks ul li button').removeClass('btn-blue');
+			$('.mainWorks ul li button').addClass('btn-default');
+		} else {
+			$('.mainWorks ul li button').removeClass('btn-default');
+			$('.mainWorks ul li button').addClass('btn-blue');
+		}
+		renewMainPics();
+	});
 });
