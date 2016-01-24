@@ -103,10 +103,10 @@ $(document).ready(function () {
 	);
 
 	function renewMainPics(){
-		$('#works a').hide();
+		$('#works div a').hide();
 		$('.btn-blue').each(function(){
 			var id=$(this).attr('id');
-			$('#works a.'+id).show();
+			$('#works div a.'+id).show();
 		});
 	}
 
