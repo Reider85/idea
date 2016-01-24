@@ -1,4 +1,4 @@
-$().ready(function () {
+$(document).ready(function () {
 	if ($('#sub-menu').length>0) {
 		var currentPageItem=$('.current_page_item');
 		if ($(currentPageItem).parent().length > 0) {
@@ -57,7 +57,7 @@ $().ready(function () {
 	$('#title-content').css({
 		minHeight: titleContentHeight+'px'
 	});
-	
+
 	// gallery - http://pgwjs.com/pgwslideshow/
 	if ($('*').is('.pgwSlideshow')) {
 		$('.right .pgwSlideshow').pgwSlideshow({

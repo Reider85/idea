@@ -7,8 +7,20 @@
 	<?php $post=$query->get_posts();?>
 	<?php echo($post[0]->post_content);?>
 <?php endif;?>
-
-
-
+<?php if ($obj->ID==4):?>
+	<?php $query=new WP_Query(array('p'=>421));?>
+	<?php $post=$query->get_posts();?>
+	<?php echo($post[0]->post_content);?>
+<?php endif;?>
+<?php if ($obj->ID==39):?>
+	<?php $query=new WP_Query(array('p'=>385));?>
+	<?php $post=$query->get_posts();?>
+	<?php echo($post[0]->post_content);?>
+<?php endif;?>
+<?php if ($obj->ID==39):?>
+	<?php $query=new WP_Query(array('p'=>429));?>
+	<?php $post=$query->get_posts();?>
+	<?php echo($post[0]->post_content);?>
+<?php endif;?>
 <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
 
