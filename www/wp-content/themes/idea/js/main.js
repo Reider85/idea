@@ -127,6 +127,18 @@ $(document).ready(function () {
 
 	});
 
+	$('#map .btn').click(function(){
+		if (confirm("Отправить сообщение?")){
+			if (($('input[name=address]').val()!='')&&
+				($('[name=message]').val()!='')&&
+				($('#name').val()!='')){
+				$('#real').val(1);
+			} else {
+				alert('Заполните все поля');
+			}
+		}
+	});
+
 	$('.mainWorks ul li:first-child button').click(function(e){
 		if ($(this).hasClass('btn-blue')){
 			$('.mainWorks ul li button').removeClass('btn-blue');

@@ -184,15 +184,16 @@ get_header(); ?>
 <!-- map -->
 <div id="map">
 	<div class="container">
-		<form>
+		<form method="post" action="/mailsend.php">
 			<p>Самарская обл.,
 				</br>г. Тольятти, ул Автостроителей, д.  84 А</p>
 			<p>(8482) 55-10-88, 55-90-88,
 				</br>+7(927)894-45-50</p>
 			<h3>Оставить сообщение</h3>
-			<input type="text" placeholder="E-mail" />
-			<input type="text" placeholder="Имя" />
-			<textarea placeholder="Сообщение"></textarea>
+			<input type="text" name="address" placeholder="E-mail" />
+			<input type="text" name="name" id="name" placeholder="Имя" />
+			<textarea placeholder="Сообщение" name="message"></textarea>
+			<input type="hidden" name="real" id="real" value="0"/>
 			<input class="btn btn-blue" type="submit" value="Отправить" />
 		</form>
 	</div>
