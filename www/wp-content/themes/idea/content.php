@@ -17,8 +17,8 @@
 		twentyfifteen_post_thumbnail();
 	?>
 
-
-	<div id="news">
+	<?php $categories=get_the_category();$category=$categories[0];;?>
+	<div id="<?php if ($category->cat_ID==2):?>news<?php else:?><?php echo $category->category_nicename?><?php endif;?>">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(

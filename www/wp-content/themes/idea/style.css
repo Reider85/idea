@@ -936,6 +936,10 @@ header > .container {
 	line-height: 21px;
 }
 
+#works br{
+	display:none;
+}
+
 @media (max-width: 992px) {
 	#works.inner div a {
 		width: 48%;
