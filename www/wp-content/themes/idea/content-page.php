@@ -17,8 +17,13 @@
 	<?php $post=$query->get_posts();?>
 	<?php echo($post[0]->post_content);?>
 <?php endif;?>
-<?php if ($obj->ID==39):?>
+<?php if (($obj->ID==39)||($obj->ID==2)):?>
 	<?php $query=new WP_Query(array('p'=>429));?>
+	<?php $post=$query->get_posts();?>
+	<?php echo($post[0]->post_content);?>
+<?php endif;?>
+<?php if ($obj->ID==2):?>
+	<?php $query=new WP_Query(array('p'=>452));?>
 	<?php $post=$query->get_posts();?>
 	<?php echo($post[0]->post_content);?>
 <?php endif;?>

@@ -76,8 +76,13 @@ $(document).ready(function () {
 			size: 4
 		});
 	}
+
 	$("#placement").change(function(){
 		$("#" + this.value).show().siblings().hide();
+		$(".right").hide();
+		var currentNum=this.value.split('box')[1];
+		$(".right"+currentNum).show();
+		$(".right"+currentNum+" img").trigger("click");
 	});
 	$("#placement").change();
 

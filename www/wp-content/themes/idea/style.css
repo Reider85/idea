@@ -2228,7 +2228,9 @@ ul#news li p img{
 #portfolio>p{
 	display:none;
 }
-
+#videostand>p{
+	display:none;
+}
 
 
 

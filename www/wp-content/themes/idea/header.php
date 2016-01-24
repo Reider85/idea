@@ -14,12 +14,14 @@
 
 	<!-- css -->
 	<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/bootstrap-select.css" rel="stylesheet">
 	<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/full-slider.css" rel="stylesheet">
 	<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/pgwslideshow.min.css" rel="stylesheet">
 
 	<!-- js -->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/bootstrap.min.js"></script>
+	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/bootstrap-select.js"></script>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/pgwslideshow.js"></script>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.js"></script>
 	<?php wp_head(); ?>
