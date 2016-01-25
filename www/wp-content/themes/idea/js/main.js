@@ -154,4 +154,14 @@ $(document).ready(function () {
 			}
 		}
 	});
+
+	$('.indicators li').click(function(){
+		var num=$('.indicators li').index($(this));
+		$('.indicators li').removeClass('active');
+		$(this).addClass('active');
+		$('#team .row').hide();
+		if ($('#team .row').eq(num)) {
+			$('#team .row').eq(num).show();
+		}
+	})
 });
