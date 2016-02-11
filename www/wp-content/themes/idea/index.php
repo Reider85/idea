@@ -114,7 +114,7 @@ get_header(); ?>
 		<div class="border-3aaaab">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_cloth.jpg" alt="" />
 			<span>Корпоративная одежда</span>
-			<a href="#" class="btn btn-default">Подробнее</a>
+			<a href="/korporativnaja_odezhda/rubashki/" class="btn btn-default">Подробнее</a>
 		</div>
 		<div class="lg border-d69320">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_light.jpg" alt="" />
@@ -129,17 +129,17 @@ get_header(); ?>
 		<div class="lg border-f7a80d">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_letters.jpg" alt="" />
 			<span>Объемные буквы</span>
-			<a href="#" class="btn btn-default">Подробнее</a>
+			<a href="/obemnye_bukvy/" class="btn btn-default">Подробнее</a>
 		</div>
 		<div class="border-db4437">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_info.jpg" alt="" />
 			<span>Информационные стенды</span>
-			<a href="#" class="btn btn-default">Подробнее</a>
+			<a href="/informacionnye_stendy/" class="btn btn-default">Подробнее</a>
 		</div>
 		<div class="border-67912b">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/service_uv.jpg" alt="" />
 			<span>UV-печать</span>
-			<a href="#" class="btn btn-default">Подробнее</a>
+			<a href="/uv_pechat/" class="btn btn-default">Подробнее</a>
 		</div>
 
 	</div>

@@ -59,7 +59,7 @@
 		<ul id="main-menu">
 			<li><a href="/index.php" class="active">Главная</a></li>
 			<li><a href="/about_idea/">О компании</a></li>
-			<li><a href="#">Услуги</a></li>
+			<li><a href="/razmeshhenie_reklamy/">Услуги</a></li>
 			<li><a href="/category/news/">Новости</a></li>
 			<li><a href="/contacts/">Контакты</a></li>
 		</ul>
