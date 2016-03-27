@@ -300,7 +300,8 @@ function get_the_content( $more_link_text = null, $strip_teaser = false ) {
 				 * @param string $more_link_element Read More link element.
 				 * @param string $more_link_text    Read More text.
 				 */
-				$output .= apply_filters( 'the_content_more_link', ' <a href="' . get_permalink() . "#more-{$post->ID}\" class=\"more-link\">$more_link_text</a>", $more_link_text );
+				//$output .= apply_filters( 'the_content_more_link', ' <a href="' . get_permalink() . "#more-{$post->ID}\" class=\"more-link\">$more_link_text</a>", $more_link_text );
+				$output .= apply_filters( 'the_content_more_link', ' <a href="' . get_permalink() . "\" class=\"more-link\">$more_link_text</a>", $more_link_text );
 			$output = force_balance_tags( $output );
 		}
 	}
@@ -453,7 +454,7 @@ function get_post_class( $class = '', $post_id = null ) {
 	// Post requires password
 	if ( post_password_required( $post->ID ) ) {
 		$classes[] = 'post-password-required';
-	// Post thumbnails
+		// Post thumbnails
 	} elseif ( ! is_attachment( $post ) && current_theme_supports( 'post-thumbnails' ) && has_post_thumbnail( $post->ID ) ) {
 		$classes[] = 'has-post-thumbnail';
 	}
@@ -1427,13 +1428,13 @@ class Walker_Page extends Walker {
 
 		/** This filter is documented in wp-includes/post-template.php */
 		$output .= $indent . sprintf(
-			'<li class="%s"><a href="%s">%s%s%s</a>',
-			$css_classes,
-			get_permalink( $page->ID ),
-			$args['link_before'],
-			apply_filters( 'the_title', $page->post_title, $page->ID ),
-			$args['link_after']
-		);
+				'<li class="%s"><a href="%s">%s%s%s</a>',
+				$css_classes,
+				get_permalink( $page->ID ),
+				$args['link_before'],
+				apply_filters( 'the_title', $page->post_title, $page->ID ),
+				$args['link_after']
+			);
 
 		if ( ! empty( $args['show_date'] ) ) {
 			if ( 'modified' == $args['show_date'] ) {
@@ -1799,7 +1800,7 @@ function wp_post_revision_title_expanded( $revision, $link = true ) {
 		$date = "<a href='$link'>$date</a>";
 
 	$revision_date_author = sprintf(
-		/* translators: post revision title: 1: author avatar, 2: author name, 3: time ago, 4: date */
+	/* translators: post revision title: 1: author avatar, 2: author name, 3: time ago, 4: date */
 		_x( '%1$s %2$s, %3$s ago (%4$s)', 'post revision title' ),
 		$gravatar,
 		$author,

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<title>Рекламное агентство &laquo;Идея&raquo;</title>
+	<title>Рекламая компания &laquo;Идея&raquo;</title>
 
 	<!-- favicon -->
 	<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicon.ico" rel="icon">
@@ -31,7 +31,7 @@
 <!-- header -->
 <header class="navbar-fixed-top">
 	<div class="container">
-		<h1 id="logo"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.png" alt="" /></a></h1>
+		<h1 id="logo"><a href="/index.php"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.png" alt="" /></a></h1>
 		<div id="caption">
 			Мы реализуем самые оригинальные идеи и учитываем индивидуальные особенности клиентов
 		</div>
@@ -44,7 +44,7 @@
 			<div id="mail" class="">
 				<h2>E-mail:</h2>
 				<strong>idea163@yandex.ru</strong><br>
-                <strong>idea163reklama@yandex.ru</strong>
+				<strong>idea163reklama@yandex.ru</strong>
 			</div>
 			<div id="phone" class="">
 				<h2>Телефон:</h2>
@@ -56,12 +56,12 @@
 </header>
 <div id="nav">
 	<div class="container">
-		<ul id="main-menu">
-			<li><a href="/index.php" class="active">Главная</a></li>
-			<li><a href="/about_idea/">О компании</a></li>
-			<li><a href="/razmeshhenie_reklamy/">Услуги</a></li>
-			<li><a href="/category/news/">Новости</a></li>
-			<li><a href="/contacts/">Контакты</a></li>
+		<ul id="main-menu"><?php $categories=get_the_category();$category=isset($categories[0])?$categories[0]:[];?>
+			<li><a href="/index.php" <?php if ($_SERVER["REQUEST_URI"]==''||$_SERVER["REQUEST_URI"]=='/'):?>class="active"<?php endif;?>>Главная</a></li>
+			<li><a href="/about_idea/" <?php if (strstr(get_permalink($post->ID),'/about_idea/')):?>class="active"<?php endif;?>>О компании</a></li>
+			<li><a href="/portfolio/" <?php if ((isset($category->category_nicename)&&($category->category_nicename=='portfolio'))||(strstr(get_permalink($post->ID),'/portfolio/'))):?>class="active"<?php endif;?>>Портфолио</a></li>
+			<li><a href="/category/news/" <?php if (isset($category->category_nicename)&&($category->category_nicename=='news')):?>class="active"<?php endif;?>>Новости</a></li>
+			<li><a href="/contacts/" <?php if (strstr(get_permalink($post->ID),'/contacts/')):?>class="active"<?php endif;?>>Контакты</a></li>
 		</ul>
 		<ul id="social">
 			<!--<li><a class="fb" href="#" title="Facebook"></a></li>
