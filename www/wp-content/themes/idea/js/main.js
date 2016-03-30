@@ -15,7 +15,7 @@ $(document).ready(function () {
 	$('#search button').click(function(){
 		$(this).toggleClass('active');
 		$('#search form').fadeToggle(200);
-    });
+	});
 	$(function(){
 		$(document).click(function(event) {
 			if ($(event.target).closest('#search').length) return;
@@ -73,7 +73,7 @@ $(document).ready(function () {
 	if ($('*').is('.selectpicker')) {
 		$('.selectpicker').selectpicker({
 			style: 'btn-info',
-			size: 4
+			size: 30
 		});
 	}
 

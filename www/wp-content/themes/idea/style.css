@@ -1125,7 +1125,7 @@ header > .container {
 	color: #3aaaab;
 }
 
-#sub-menu > li.current_page_item > div > a:before, 
+#sub-menu > li.current_page_item > div > a:before,
 #sub-menu > li > div > a:hover:before,
 #sub-menu > li > div > a:focus:before {
 	content: '';
@@ -1409,7 +1409,7 @@ header > .container {
 	position: relative;
 }
 
-#last-news ul li:not(:last-child) {
+#last-news ul li:not(:last-child),#videostand #boxes div ul li:not(:last-child){
 	border-bottom: 1px solid #e1e0e0;
 }
 
@@ -1466,7 +1466,9 @@ header > .container {
 	display: inline-block;
 	vertical-align: top;
 }
-
+#videostand.inner .left{
+	background-color: #FFFFFF;
+}
 .inner .right {
 	margin-left: 1.5%;
 }
@@ -2230,6 +2232,9 @@ ul#news li p img{
 }
 #videostand>p{
 	display:none;
+}
+#videostand #boxes div ul li{
+	margin-right:15px;
 }
 
 
